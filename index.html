@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/scss/style.css">
+    <title>Калькулятор зарплат</title>
+</head>
+<body>
+<div class="wrapper">
+    <img src="/img/SM.png" alt="" class="image">
+    <div class="block">
+        <h2>👷 Мастер</h2>
+    
+        <label>Отработано дней:
+            <input type="number" id="m_days" value="0">
+        </label>
+    
+        <label>Стаж (лет):
+            <input type="number" id="m_years" value="0">
+        </label>
+    
+        <label>Общая касса за период:
+            <input type="number" id="m_cash" value="0">
+        </label>
+    
+        <label class="checkbox">
+            <input type="checkbox" id="m_art"> <span>Сдал отрисовку</span>
+        </label>
+    
+        <label class="checkbox">
+          <input type="checkbox" id="m_teacher">
+          Уполномочен обучать
+        </label>
+    
+        <label>Количество смен со стажёрами:
+          <input type="number" id="m_intern_days" value="0">
+        </label>
+    
+    
+        <button onclick="calcMaster()">Посчитать мастера</button>
+        <div class="result" id="m_result"></div>
+    </div>
+    
+    <div class="block">
+        <h2>🧑‍💼 Консультант</h2>
+    
+        <label>Процент до 500 ₽:
+            <input type="number" id="p1" value="0">
+        </label>
+    
+        <label>Процент 501–1000 ₽:
+            <input type="number" id="p2" value="0">
+        </label>
+    
+        <label>Процент выше 1000 ₽:
+            <input type="number" id="p3" value="0">
+        </label>
+    
+        <h4>Касса по дням</h4>
+        <table id="consultantTable" border="1" cellpadding="5">
+            <thead>
+            <tr>
+                <th><span>День</span></th>
+                <th><span>Касса</span></th>
+                <th><span>Действия</span></th>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- строки для дней -->
+            </tbody>
+        </table>
+    
+        <button onclick="addConsultantDay()">➕ Добавить день</button>
+        <button onclick="calcConsultant()">Посчитать консультанта</button>
+    
+        <div class="result" id="c_result"></div>
+    </div>
+</div>
+
+<script src="/js/index.js"></script>
+</body>
+</html>

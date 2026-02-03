@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  padding: 20px;
+  font-family: "Roboto";
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.image {
+  position: absolute;
+  width: 210rem;
+  z-index: 1;
+}
+
+.block {
+  position: relative;
+  background: #ffffff;
+  padding: 2rem;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  width: 55rem;
+  z-index: 3;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin: 8px 0;
+  font-size: 2rem;
+  font-weight: 400;
+}
+label input {
+  margin-top: 4px;
+  padding: 5px;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.checkbox input {
+  width: auto;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+span {
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+h4 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.result {
+  margin-top: 10px;
+  font-weight: bold;
+  white-space: pre-line;
+}
+
+.c_cash {
+  font-size: 2rem;
+}
+
+.num {
+  font-size: 2rem;
+}
+
+.day {
+  margin-left: 15px;
+}/*# sourceMappingURL=style.css.map */
