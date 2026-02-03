@@ -11,30 +11,39 @@ body {
   background: $bg;
   padding: 20px;
   font-family: 'Roboto';
+  position: relative;
+  margin: 0;
 }
 
 .wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   padding: 1rem;
+  gap: 2rem;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
 }
 
 .image {
-    position: absolute;
+    position: fixed;
     width: 210rem;
     z-index: 1;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .block {
-  position: relative;
-
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 55rem;
   background: $white;
   padding: 2rem;
   margin-bottom: 20px;
   border-radius: $radius;
-  // max-width: 500px;
-  width: 55rem;
+  max-width: 55rem;
   z-index: 3;
 }
 
@@ -109,6 +118,11 @@ h2 {
   margin-left: 15px;
 }
 
-// @media () {
-  
-// }
+@media (max-width: 755px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+}
